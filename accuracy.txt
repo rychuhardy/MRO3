@@ -1,0 +1,16 @@
+CNN k=1         0.787878787879
+CNN reduction   0.08955223880597014
+Euclidean k=1   0.969696969697
+CNN k=3         0.333333333333
+CNN reduction   0.1044776119402985
+Euclidean k=3   0.939393939394
+
+
+Version 2
+
+CNN k=1         0.636363636364
+CNN reduction   0.13432835820895522
+Euclidean k=1   0.939393939394
+CNN k=3         0.393939393939
+CNN reduction   0.1791044776119403
+Euclidean k=3   0.969696969697

@@ -15,13 +15,13 @@ data_points=[]
 n_neighbors = 1
 samples_in_class = 50
 
-mean = [7, 7]
-cov_matrix = np.matrix('12, 5; 5, 6')
+mean = [0, 7]
+cov_matrix = np.matrix('3, 1; 1, 6')
 x, y = np.random.multivariate_normal(mean, cov_matrix, samples_in_class).T
 data_points += list(zip(x, y, it.repeat(0)))
 
-mean = [-1, -1]
-cov_matrix = np.matrix('5, 4; 4, 4')
+mean = [0, -1]
+cov_matrix = np.matrix('15, 4; 4, 6')
 x, y = np.random.multivariate_normal(mean, cov_matrix, samples_in_class).T
 data_points += list(zip(x, y, it.repeat(1)))
 
@@ -101,7 +101,7 @@ for weights in ['uniform']:
 
     # Put the result into a color plot
     Z = Z.reshape(xx.shape)
-    plt.figure(4)
+    plt.figure(2)
     plt.pcolormesh(xx, yy, Z, cmap=cmap_light2)
 
     # Plot also the training points
@@ -177,7 +177,7 @@ for weights in ['uniform']:
 
     # Put the result into a color plot
     Z = Z.reshape(xx.shape)
-    plt.figure(2)
+    plt.figure(4)
     plt.pcolormesh(xx, yy, Z, cmap=cmap_light2)
 
     # Plot also the training points
